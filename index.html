@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors game!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&family=League+Spartan:wght@500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header class="scoreBoard">
+    <div class="scoreBoard__title">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    <div class="scoreBoard__number">
+      <p>SCORE</p>
+      <h2>0</h2>
+    </div>
+  </header>
+
+  <!--PLAYBOARD-->
+  <div class="playField">
+    <div class="playField__items">
+      <img class='bg-triangle'src="images/bg-triangle.svg" alt="">
+      <div class=" playField__item playField__item--1 img--frame paper--color" id='paper'>
+        <img id='paper' class='paper-img'src="images/icon-paper.svg" alt="">
+      </div>
+      <div class=" playField__item playField__item--2 img--frame scissors--color" id ='scissors'  >
+        <img id ='scissors' class='scissors-img'src="images/icon-scissors.svg" alt="">
+      </div>
+      <div class=" playField__item playField__item--3 img--frame rock--color" id='rock'>
+        <img id='rock' class='rock-img'src="images/icon-rock.svg" alt="">
+      </div>
+    </div >
+
+  </div>
+  
+<!--RULES BTN and RULES -->
+  <div class="rules--btn--wrapper">
+    <button class="rules--btn">RULES</button>
+  </div>
+ <div class="overlay hidden">
+  <div class="rules hidden">
+    <h2>RULES</h2>
+    <img id='rules-card hidden'src="images/image-rules.svg" alt="">
+    <img id='close--btn'src="images/icon-close.svg" alt="game rules">
+  </div>
+</div>
+  
+<!--DISPLAY RESULTS-->
+  <div class="displayWinner hidden">
+    <div class="outline-1"></div>
+    <div class="outline-2"></div>
+    <div class="outline-3"></div>
+    <div class="displayWinner__user ">
+        <h2>YOU PICKED</h2>
+        <div class='img--frame '>
+          <img id='user-img'src='' alt="">
+        </div>
+    </div>
+    <div class="displayWinner__result hidden ">
+         <h2 class="result ">You win</h2>
+          <button class="playAgain--btn">Play Again</button>
+    </div>
+    <div class="displayWinner__pc ">
+          <h2>THE HOUSE PICKED</h2>
+          <div class='img--frame hidden'>
+             <img id='pc-img'src="
+          " alt=""> 
+          </div>
+    </div>
+   </div>
+  
+</body>
+</html>
